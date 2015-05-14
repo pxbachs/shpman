@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr_confirm_dialog_tile"
+    android:orientation="vertical"
+    android:tileMode="repeat" >
+
+    <TextView
+        android:id="@+id/prompt_content_e"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="25dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="@string/exit_confirm"
+        android:textColor="#FFffffff"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/prompt_hr_hor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hr05" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/prompt_accept_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:background="@drawable/btn_dialog_agree"
+            android:minHeight="55dip"
+            android:minWidth="120dip"
+            android:padding="10dip" />
+
+        <ImageView
+            android:id="@+id/prompt_hr_ver"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="matrix"
+            android:src="@drawable/hr05_ver" />
+
+        <ImageButton
+            android:id="@+id/prompt_cancel_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:background="@drawable/btn_dialog_exit"
+            android:minHeight="55dip"
+            android:minWidth="120dip"
+            android:padding="10dip" />
+    </LinearLayout>
+
+</LinearLayout>

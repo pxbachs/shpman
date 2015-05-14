@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeRuocShop</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="exit_confirm">Bạn có chắc chắn muốn thoát?</string>
+    <string name="net_refresh_confirm">Lỗi mạng. Bạn có muốn thử lại không?</string>
+    <string name="net_loading">Đang tải. Vui lòng chờ chút!</string>
+    <string name="title_activity_product_sub_catalog">ProductSubCatalogActivity</string>
+    <string name="title_activity_product_summary">ProductSummaryActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+
+</resources>

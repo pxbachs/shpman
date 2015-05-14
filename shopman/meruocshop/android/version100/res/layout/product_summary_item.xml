@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_topic_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/topic_image_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder_category"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/topic_image_item_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/shadow_category" />
+
+    <TextView
+        android:id="@+id/topic_name_label"
+        style="@style/TopicTextOverlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/topic_image_item"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/topic_image_item"
+        android:padding="7dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <ProgressBar
+         android:id="@+id/progress"
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:layout_alignBottom="@+id/topic_name_label"
+         android:layout_alignRight="@+id/topic_image_item"
+         android:layout_margin="3dp"
+         android:visibility="visible" />
+
+</RelativeLayout>

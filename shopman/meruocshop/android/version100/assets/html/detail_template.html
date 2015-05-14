@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+	.contentstyle {
+		font-family: Georgia;
+		font-size: 20;
+		line-height: 1.4em;
+		color: #333333;
+		background-color: transparent;
+	}
+	img {
+		max-width: 90%;
+		padding: 10px;
+		align: center;
+	}
+	</style>
+	<script type="text/javascript">
+		function hello(){
+			AndroidFunction.openAndroidDialog();
+		}
+		function replace_img(id, src) {
+			document.getElementById(id).src = src;
+		}
+		
+		function set_detail(content){
+			document.getElementById('detail').innerHTML = content;
+		}
+		
+		function ChangeFontSize(size) {
+			document.body.style.fontSize = size + "pt";
+			alert("Changed Font Size: " + size);
+            return true;
+        }
+        
+        function img_clicked(imgId, imgSrc){
+        	AndroidFunction.viewAsAlbum(imgId, imgSrc);
+        }
+	</script>
+</head>
+<body>
+	<span style="font-family: Georgia; font-size: 24; color: #002B60">%TITLE%</span>
+	<br>
+	<table width="100%" border="0" style="height: 24px;">
+		<tr>
+			<td valign="middle" width="32px" height="32px"><img src="%SOURCE_IMG%"/></td>
+			<td valign="middle" style="white-space:nowrap;">
+				<span style="font-family: OpenSans-Light; color: #333333">&nbsp;&nbsp;&nbsp;%SOURCE_NAME%</span>
+				<span style="font-family: Helvetica; font-size: 15; color: #7e7e7e">&nbsp;•&nbsp;</span>
+				<span style="font-family: OpenSans-Light; font-size: 15; color: #7e7e7e">%TIME%</span>
+			</td>
+			<!--<td valign="middle"><img src="file:///android_res/drawable/hr02.png" height="1" /></td>-->
+		</tr>
+	</table>
+	<table class='contentstyle'>
+		<tr>
+			<td>%SUMARY%</td>
+		</tr>
+		<tr>
+			<td><div id="detail">%DETAIL%</div></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>
